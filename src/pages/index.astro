@@ -4,6 +4,8 @@ import Welcome from "../components/Welcome.astro";
 import Layout from "../layouts/Layout.astro";
 import Badge from "../components/Badge.astro";
 import Linkedin from "../components/icons/Linkedin.astro";
+import GitHub from "../components/icons/GitHub.astro";
+import Pill from "../components/Pill.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -32,19 +34,18 @@ import Linkedin from "../components/icons/Linkedin.astro";
 			</h1>
 			<h2 class="text-2xl text-wrap mb-2">
 				<span class="text-gray-100">I'm a IOS Developer.</span>
-				<span class="text-gray-300"> Currently working on my portfolio.</span>
+				<span class="text-gray-300">
+					Currently working on my portfolio.</span
+				>
 				<span class="text-indigo-400"> My real name is Benjamin</span>
 			</h2>
 
-			<ul>
-				<li>
-					<a href="https://www.linkedin.com/in/benjamincontreras05/"
-					target="_blank">
-						<Linkedin class="w-2 h-2"/>
-						Linkedin
-					</a>
-				</li>
-			</ul>
+			<nav class="flex gap-x-2">
+				<Pill href="https://www.linkedin.com/in/benjamincontreras05/">
+					<Linkedin />
+					Linkedin
+				</Pill>
+			</nav>
 		</section>
 	</main>
 </Layout>
