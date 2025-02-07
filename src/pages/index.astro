@@ -1,0 +1,50 @@
+---
+import Header from "../components/Header.astro";
+import Welcome from "../components/Welcome.astro";
+import Layout from "../layouts/Layout.astro";
+import Badge from "../components/Badge.astro";
+import Linkedin from "../components/icons/Linkedin.astro";
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout>
+	<main>
+		<section class="w-full mx-auto lg:w-[740px] py-44">
+			<img
+				class="rounded-full h-12 w-12 mb-4"
+				src="https://i.pinimg.com/736x/95/8e/fe/958efee57b10775e451219f1eb014b7e.jpg"
+				alt="Fxkrzn"
+			/>
+			<h1
+				class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-4"
+			>
+				Hey, I'm Fxkrzn
+				<a
+					href="https://www.linkedin.com/in/benjamincontreras05/"
+					target="_blank"
+					rel="noopener"
+					class="flex justify-center items-center"
+				>
+					<Badge>Avalible to work </Badge>
+				</a>
+			</h1>
+			<h2 class="text-2xl text-wrap mb-2">
+				<span>I'm a IOS Developer.</span>
+				<span class="opacity-80"> Currently working on my portfolio.</span>
+				<span class="text-red-300"> My real name is Benjamin</span>
+			</h2>
+
+			<ul>
+				<li>
+					<a href="https://www.linkedin.com/in/benjamincontreras05/"
+					target="_blank">
+						<Linkedin class="w-2 h-2"/>
+						Linkedin
+					</a>
+				</li>
+			</ul>
+		</section>
+	</main>
+</Layout>
