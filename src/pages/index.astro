@@ -1,12 +1,12 @@
 ---
 import Header from "../components/Header.astro";
-// import Welcome from "../components/Welcome.astro";
+import Welcome from "../components/Welcome.astro";
 import Layout from "../layouts/Layout.astro";
 import Badge from "../components/Badge.astro";
 import Linkedin from "../components/icons/Linkedin.astro";
 import GitHub from "../components/icons/GitHub.astro";
 import Pill from "../components/Pill.astro";
-
+import ProfileImage from "../components/ProfileImage.astro"; // Importa el nuevo componente
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
@@ -14,8 +14,7 @@ import Pill from "../components/Pill.astro";
 <Layout>
 	<main>
 		<section class="w-full mx-auto lg:w-[740px] py-44">
-			<img
-				class="rounded-full h-12 w-12 mb-4"
+			<ProfileImage
 				src="https://i.pinimg.com/736x/95/8e/fe/958efee57b10775e451219f1eb014b7e.jpg"
 				alt="Fxkrzn"
 			/>
